@@ -1,40 +1,261 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>لینک‌های من</title>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>راه‌های ارتباطی مسجد تکیه</title>
 
 <style>
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#000;
-background-image:url('./IMG_20260828_232427_872.jpg');
-background-size:100% auto;
-background-position:center top;
-background-repeat:no-repeat;
-background-attachment:fixed;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh
-}
 
-.card{
-    width:min(92%, 560px);
-    background:#f8f7f7;
-    border-radius:28px;
-    padding:38px 28px 30px;
-    box-shadow:0 10px 35px #0008;
-    text-align:center;
-    border:2px solid #c99b45;
+*{
     box-sizing:border-box;
 }
 
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    font-family:Arial,sans-serif;
+
+    background-color:#000;
+
+    background-image:url('./IMG_20260828_232427_872.jpg');
+    background-size:100% auto;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding-top:420px;
+    padding-bottom:40px;
+}
+
+
+/* کادر سفید */
+
+.card{
+    width:min(92%,560px);
+
+    background:#f8f7f7;
+
+    border-radius:28px;
+
+    padding:38px 28px 30px;
+
+    text-align:center;
+
+    border:2px solid #c99b45;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.55);
+
+}
+
+
+/* عنوان */
+
 h1{
     margin:0 0 18px;
+
     font-size:32px;
+
+    line-height:1.5;
+
+    color:#164d2d;
+
+    font-weight:bold;
+}
+
+
+/* توضیح */
+
+.p{
+    color:#666;
+
+    margin-bottom:28px;
+
+    font-size:20px;
+
+    line-height:1.7;
+}
+
+
+/* دکمه‌ها */
+
+a{
+    display:block;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:20px 16px;
+
+    margin:16px 0;
+
+    border-radius:22px;
+
+    font-size:22px;
+
+    line-height:1.5;
+
+    font-weight:bold;
+
+    border:2px solid #c99b45;
+
+    box-shadow:
+        0 6px 14px rgba(0,0,0,.25);
+
+    transition:transform .15s;
+}
+
+a:active{
+    transform:scale(.97);
+}
+
+
+/* اینستاگرام */
+
+.insta{
+    background:
+        linear-gradient(
+            135deg,
+            #d41472,
+            #b0005b
+        );
+}
+
+
+/* ایتا */
+
+.eitaa{
+    background:
+        linear-gradient(
+            135deg,
+            #ff9d00,
+            #f06d00
+        );
+}
+
+
+/* نوشته پایین */
+
+small{
+    display:block;
+
+    color:#777;
+
+    margin-top:30px;
+
+    font-size:17px;
+
+    direction:ltr;
+}
+
+
+/* برای صفحه‌های کوچک */
+
+@media(max-width:450px){
+
+    body{
+        padding-top:410px;
+    }
+
+    .card{
+        width:92%;
+
+        padding:32px 20px 26px;
+
+        border-radius:27px;
+    }
+
+    h1{
+        font-size:27px;
+    }
+
+    .p{
+        font-size:18px;
+        margin-bottom:24px;
+    }
+
+    a{
+        font-size:20px;
+
+        padding:18px 12px;
+
+        margin:14px 0;
+
+        border-radius:20px;
+    }
+
+    small{
+        font-size:15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+    <h1>
+        راه‌های ارتباطی مسجد تکیه
+    </h1>
+
+
+    <div class="p">
+        یکی از گزینه‌های زیر را انتخاب کنید
+    </div>
+
+
+    <a class="insta"
+       href="https://instagram.com/masjed_takie_hosseiny">
+
+        📸 ورود به اینستاگرام
+
+    </a>
+
+
+    <a class="eitaa"
+       href="https://eitaa.com/masjedtakye">
+
+        📱 ورود به کانال ایتا
+
+    </a>
+
+
+    <small>
+        masjed_takie_hosseiny@
+    </small>
+
+
+</div>
+
+
+</body>
+
+</html>    font-size:32px;
     color:#164d2d;
     font-weight:bold;
 }

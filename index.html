@@ -1,40 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>لینک‌های مسجد تکیه</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>لینک‌های من</title>
 
 <style>
-
-*{
-    box-sizing:border-box;
-}
-
-html,body{
-    margin:0;
-    padding:0;
-    width:100%;
-    min-height:100%;
-}
-
 body{
-    font-family:Arial, sans-serif;
-    background:#000;
-    
-    background-image:url("./IMG_20260828_232427_872.jpg");
-    background-size:100% auto;
-    background-position:center top;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#000;
+background-image:url('./IMG_20260828_232427_872.jpg');
+background-size:100% auto;
+background-position:center top;
+background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh
+}
 
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+.card{transform:translateY(90px);
+  width:min(90%,420px);
+  background:#fff;
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 10px 35px #0001;
+  text-align:center
+}
 
-    min-height:100vh;
-    padding:360px 15px 40px;
+h1{
+  margin:0 0 10px;
+  font-size:28px
+}
+
+.p{
+  color:#666;
+  margin-bottom:28px
+}
+
+a{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:16px;
+  margin:14px 0;
+  border-radius:14px;
+  font-size:18px;
+  font-weight:bold
+}
+
+.eitaa{
+  background:#f28c18
+}
+
+.insta{
+  background:#c13584
+}
+
+small{
+  display:block;
+  color:#888;
+  margin-top:22px
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>راه‌های ارتباطی مسجد تکیه</h1>
+
+<div class="p">
+یکی از گزینه‌های زیر را انتخاب کنید
+</div>
+
+<a class="insta" href="https://instagram.com/masjed_takie_hosseiny">
+📸 ورود به اینستاگرام
+</a>
+
+<a class="eitaa" href="https://eitaa.com/masjedtakye">
+📱 ورود به کانال ایتا
+</a>
+
+<small>
+@masjed_takie_hosseiny
+</small>
+
+</div>
+
+</body>
+</html>    padding:360px 15px 40px;
 }
 
 

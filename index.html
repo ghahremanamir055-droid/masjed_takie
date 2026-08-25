@@ -2,93 +2,318 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>لینک‌های من</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>راه‌های ارتباطی مسجد تکیه</title>
 
 <style>
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#000;
-  background-image:url("./IMG_20260828_232427_872.jpg");
-  background-size:100% auto;
-  background-position:center top;
-  background-repeat:no-repeat;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh
+*{
+    box-sizing:border-box;
 }
+
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    font-family:Tahoma, Arial, sans-serif;
+
+    background-color:#000;
+
+    /* عکس پس زمینه خودت */
+    background-image:url("./IMG_20260828_232427_872.jpg");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:100% auto;
+
+    color:#183d28;
+
+    display:flex;
+    justify-content:center;
+
+    min-height:100vh;
+
+    padding-top:440px;
+    padding-bottom:35px;
+}
+
+
+/* کادر اصلی */
 
 .card{
-  width:min(90%,420px);
-  background:#fff;
-  border-radius:24px;
-  padding:30px;
-  box-shadow:0 10px 35px #0001;
-  text-align:center;
-  transform:translateY(105px);
+    width:86%;
+    max-width:380px;
+
+    background:rgba(255,255,255,0.97);
+
+    border-radius:30px;
+
+    border:2px solid #d5ad58;
+
+    padding:30px 22px 24px;
+
+    text-align:center;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35),
+        0 0 18px rgba(212,170,75,0.18);
+
+    position:relative;
 }
+
+
+/* تزئین بالای کادر */
+
+.card::before{
+    content:"✦";
+    display:block;
+
+    color:#d5ad58;
+
+    font-size:24px;
+
+    margin-bottom:8px;
+}
+
+
+/* عنوان */
 
 h1{
-  margin:0 0 10px;
-  font-size:28px
+    margin:0;
+
+    color:#16482d;
+
+    font-size:27px;
+
+    line-height:1.8;
+
+    font-weight:bold;
 }
 
-.p{
-  color:#666;
-  margin-bottom:28px
+
+/* خط تزئینی */
+
+.divider{
+    width:75%;
+    height:1px;
+
+    background:#d9b76b;
+
+    margin:13px auto 12px;
+
+    position:relative;
 }
+
+.divider::after{
+    content:"◆";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#fff;
+
+    color:#d5ad58;
+
+    padding:0 8px;
+
+    font-size:12px;
+}
+
+
+/* متن زیر عنوان */
+
+.description{
+    color:#777;
+
+    font-size:16px;
+
+    line-height:2;
+
+    margin:0 0 18px;
+}
+
+
+/* دکمه ها */
 
 a{
-  display:block;
-  text-decoration:none;
-  color:#fff;
-  padding:16px;
-  margin:14px 0;
-  border-radius:14px;
-  font-size:18px;
-  font-weight:bold
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+
+    min-height:68px;
+
+    margin:12px 0;
+
+    padding:14px 18px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    border:2px solid #d5ad58;
+
+    box-shadow:
+        0 7px 15px rgba(0,0,0,0.18);
+
+    transition:transform .2s;
 }
 
-.eitaa{
-  background:#f28c18
+a:active{
+    transform:scale(.97);
 }
+
+
+/* اینستاگرام */
 
 .insta{
-  background:#c13584
+    background:linear-gradient(
+        135deg,
+        #d41472,
+        #c21870,
+        #b90068
+    );
 }
 
-small{
-  display:block;
-  color:#888;
-  margin-top:22px
+
+/* ایتا */
+
+.eitaa{
+    background:linear-gradient(
+        135deg,
+        #ff9800,
+        #f57c00
+    );
 }
+
+
+/* فاصله آیکن */
+
+.icon{
+    margin-left:10px;
+    font-size:23px;
+}
+
+
+/* خط پایین */
+
+.bottom-divider{
+    width:75%;
+    height:1px;
+
+    background:#d9b76b;
+
+    margin:24px auto 13px;
+}
+
+
+/* آیدی */
+
+small{
+    display:block;
+
+    color:#888;
+
+    font-size:14px;
+
+    direction:ltr;
+
+    letter-spacing:.2px;
+}
+
+
+/* برای گوشی های کوچک */
+
+@media(max-width:360px){
+
+    body{
+        padding-top:400px;
+    }
+
+    .card{
+        width:88%;
+        padding:25px 18px 21px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .description{
+        font-size:14px;
+    }
+
+    a{
+        font-size:17px;
+        min-height:62px;
+    }
+}
+
 </style>
 </head>
+
 
 <body>
 
 <div class="card">
 
-<h1>راه‌های ارتباطی</h1>
+    <h1>
+        راه‌های ارتباطی<br>
+        مسجد تکیه
+    </h1>
 
-<div class="p">
-یکی از گزینه‌های زیر را انتخاب کنید
-</div>
+    <div class="divider"></div>
 
-<a class="insta" href="https://instagram.com/masjed_takie_hosseiny">
-📸 ورود به اینستاگرام
-</a>
+    <p class="description">
+        یکی از گزینه‌های زیر را انتخاب کنید
+    </p>
 
-<a class="eitaa" href="https://eitaa.com/masjedtakye">
-📱 ورود به کانال ایتا
-</a>
 
-<small>
-@masjed_takie_hosseiny
-</small>
+    <!-- اینستاگرام -->
+
+    <a
+        class="insta"
+        href="https://instagram.com/masjed_takie_hosseiny"
+        target="_blank"
+    >
+        <span class="icon">📸</span>
+        ورود به اینستاگرام
+    </a>
+
+
+    <!-- ایتا -->
+
+    <a
+        class="eitaa"
+        href="https://eitaa.com/masjedtakye"
+        target="_blank"
+    >
+        <span class="icon">📱</span>
+        ورود به کانال ایتا
+    </a>
+
+
+    <div class="bottom-divider"></div>
+
+    <small>
+        @masjed_takie_hosseiny
+    </small>
 
 </div>
 
